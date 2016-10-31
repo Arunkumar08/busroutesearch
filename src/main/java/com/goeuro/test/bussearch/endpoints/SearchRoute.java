@@ -11,7 +11,7 @@ import com.goeuro.test.bussearch.DataModels.DirectSearchResponse;
 import com.goeuro.test.bussearch.services.BusRouteSearchServiceImpl;
 import com.goeuro.test.bussearch.services.IBusRouteSearchService;
 
-@Path("/")
+@Path("/api")
 public class SearchRoute {
 
 	@GET

@@ -33,6 +33,7 @@ public class ServerMain {
 		ServerMain main = new ServerMain();
 		main.startTomcat();
 		try {
+			/* Pass the local file path to this method. */
 			loadRouteData("");
 		} catch (Exception exception) {
 			System.out.println("Failed to load the data: reason, " + exception.getMessage());
@@ -45,7 +46,7 @@ public class ServerMain {
 	 */
 	private static void loadRouteData(final String filePath) throws RouteSearchException {
 		IDataLoader loader = new LoadRouteDataFromFile(filePath);
-		loader.loadRoutesFromSource(new File("C:\\Arun\\bus.txt"));
+		loader.loadRoutesFromSource();
 	}
 	
 }
